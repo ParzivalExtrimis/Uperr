@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="24dp">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="Enter a name for your task."
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/gray"
+            android:textColorHint="@color/moon"
+            android:textSize="18sp"
+            android:typeface="monospace"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="Save"
+            android:background="@color/transparent"
+            android:textAllCaps="false"
+            android:layout_below="@+id/editText"
+            android:textColor="@color/gray" />
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

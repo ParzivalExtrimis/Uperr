@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+
+        android:layout_centerVertical="true"
+        android:layout_marginHorizontal="24dp"
+
+        android:layout_marginVertical="64dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="212dp"
+        android:background="@color/white"
+        android:outlineAmbientShadowColor="@color/moon"
+        app:cardCornerRadius="32dp"
+        app:cardElevation="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/white">
+
+            <TextView
+                android:id="@+id/title_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="setTitle"
+                android:text="New Task"
+                android:padding="8dp"
+
+                android:textColorHint="#78909C"
+                android:textSize="32sp"
+                android:typeface="monospace"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/time_view"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:layout_marginBottom="90dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:hint="12 : 00"
+                android:onClick="setTime"
+                android:padding="4sp"
+                android:textColor="@color/gray"
+                android:textColorHint="#78909C"
+                android:textSize="42sp"
+                app:layout_constraintBottom_toTopOf="@+id/b_confirm_new_alarm"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title_view"
+                app:layout_constraintVertical_bias="0.101" />
+
+            <Button
+                android:id="@+id/b_confirm_new_alarm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="56dp"
+                android:layout_marginBottom="76dp"
+                android:backgroundTint="@color/candy_blue"
+                android:text="@android:string/ok"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="16dp"
+                android:textColor="@color/white"
+                app:cornerRadius="18dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <Button
+                android:id="@+id/canceL_new_alarm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="56dp"
+                android:layout_marginBottom="76dp"
+                android:backgroundTint="@color/pale_blue"
+                android:onClick="cancelNewButtonPressed"
+                android:text="Cancel"
+                android:textSize="16dp"
+                android:textColor="@color/white"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                app:cornerRadius="18dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

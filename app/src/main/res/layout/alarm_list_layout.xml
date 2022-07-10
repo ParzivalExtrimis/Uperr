@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="24dp"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="8dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/title_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:padding="2dp"
+
+            android:text="No alarm set at the moment."
+            android:textSize="15sp"
+            android:typeface="monospace" />
+
+        <TextView
+            android:id="@+id/time_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginEnd="11dp"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/b_delete_alarm"
+            android:text="00:00"
+            android:textSize="16sp"
+            android:typeface="monospace" />
+
+        <Button
+            android:id="@+id/b_delete_alarm"
+            android:layout_width="53dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="0dp"
+            android:background="@color/transparent"
+            android:shadowColor="@color/white"
+            android:text="X"
+            android:textColor="@color/moon"
+            android:textSize="12dp" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
